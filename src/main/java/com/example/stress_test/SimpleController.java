@@ -1,0 +1,12 @@
+package com.example.stress_test;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class SimpleController {
+    @GetMapping("/start")
+    public String start() {
+        return "Hello World!";
+    }
+}
